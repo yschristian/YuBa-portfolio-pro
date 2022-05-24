@@ -5,13 +5,12 @@
    --primary-green : #009933;
    --primary-dark: rgb(255, 255, 255, 0);
    --primary-black: rgb(0, 0, 0);
-   --primary-hover-red: rgb(204, 0, 0);
-   --primary-orange:var(--primary-orange);
+   --primary-orange:#ff5823;
 }
 body{
   font-family: 'Roboto Condensed', sans-serif;
 }
-/*****************************Navbar******************/
+
 .logo{
   width: 16.25rem;
  
@@ -28,7 +27,7 @@ nav a.nav-link{
 .navbar-nav >li >a{
    margin-right: 12px;
    margin-left: 12px;
-   color: var(--primary-white) !important;
+   color: var(--primary-dark);
    border-top: 3px solid var(--primary-dark)}
 .navbar-brand{
   max-width: 17.25rem;
@@ -36,11 +35,11 @@ nav a.nav-link{
   /* height:  ; */
 }
 .navbar-nav > li >a.active, .navbar-nav >li >a:active:focus{
- border-top: 3px solid var(--primary-green);
+ border-top: 3px solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover{
-  border-top: 3px solid var(--primary-green);
+  border-top: 3px solid var(--primary-orange);
 }
 /* header */
 /* 
@@ -73,7 +72,7 @@ nav a.nav-link{
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 10%;
+  height: 90vh;
   min-height: fit-content;
   background-image: url('computer.jpg');
 }
@@ -146,32 +145,4 @@ width: 380px;
 }
 .colz .colz-icon i:hover{
  transform: scale(1.5);
-}
-
-.btn{
-  border-radius: 50px;
-  padding: 14px 0;
-  width: 160px;
-  cursor: pointer;
-  transition: 0.2s;
-  font-size: "Poppins SemiBold";
-}
-.btn:active{
-  transform:  translateY(2px);
-}
-.primary-btn{
-  color: white;
-  border: 2px solid var(--primary-green);
-  font-size: 12px;
-  background-color: #1f2235;
-}
-.primary-btn:hover{
-  color: var(--primary-white);
-  border: 2px solid var(--primary-orange);
-  background-color: green;
-  border-radius: 10px;
-}
-.highlighted-btn{
-    background-color:var(--primary-orange); 
-    font-size: 12px;
 }
