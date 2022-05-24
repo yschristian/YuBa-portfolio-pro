@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../logo.png";
+
 //react fonts
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faBars } from  "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -20,7 +20,10 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <FontAwesomeIcon icon={faBars} style={{color:"rgb(255, 255, 255)"}}/>
+          <FontAwesomeIcon
+            icon={faBars}
+            style={{ color: "rgb(255, 255, 255)" }}
+          />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -35,26 +38,21 @@ const Navbar = () => {
                 About me
               </a>
             </li>
-          <li className="nav-item">
-             <a className="nav-link" href="#">
-              Services
-             </a>
-            </li> 
             <li className="nav-item">
-             <a className="nav-link" href="#">
-              How work
-             </a>
-            </li> 
+              <a className="nav-link" href="#">
+                Services
+              </a>
+            </li>
             <li className="nav-item">
-             <a className="nav-link" href="#">
-              Portfolio
-             </a>
-            </li> 
+              <a className="nav-link" href="#">
+                resume
+              </a>
+            </li>
             <li className="nav-item">
-             <a className="nav-link" href="#">
-              Contacts
-             </a>
-            </li> 
+              <a className="nav-link" href="#">
+                Contacts
+              </a>
+            </li>
           </ul>
         </div>
       </div>
